@@ -1,0 +1,6 @@
+{
+  "name": "Vorentis™ Mobile Security",
+  "description": "Official website for Vorentis™ Mobile Security by ZENTIQ. Enterprise mobile cybersecurity & threat protection with on-device AI and local VPN shield. Inquiries: officialzentiq@gmail.com",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-v-bg: #0A0F1A;
+  --color-v-secondary: #0B384A;
+  --color-v-surface: #1A2332;
+  --color-v-surface-raised: #222E42;
+  --color-v-cyan: #00D5FF;
+  --color-v-safe: #00C853;
+  --color-v-warning: #FFB300;
+  --color-v-danger: #FF3B30;
+  --color-v-text: #E5E7EB;
+  --color-v-muted: #9AA8B8;
+  --color-v-border: #1E293B;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0A0F1A;
+  color: #9AA8B8;
+  overflow-x: hidden;
+}
+
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Subtle architectural grid pattern */
+.bg-grid-pattern {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 212, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 212, 255, 0.04) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-size: 28px 28px;
+  background-image: radial-gradient(rgba(0, 212, 255, 0.09) 1px, transparent 1px);
+}
+
+/* Precision Tactical Container Styling */
+.tactical-border {
+  position: relative;
+  border: 1px solid rgba(30, 41, 59, 0.9);
+  background: linear-gradient(180deg, rgba(20, 29, 46, 0.75) 0%, rgba(11, 15, 23, 0.85) 100%);
+}
+
+.tactical-border::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 20%;
+  right: 20%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.4), transparent);
+  pointer-events: none;
+}
+
+/* Corner bracket accents */
+.corner-bracket {
+  position: relative;
+}
+.corner-bracket::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #00D4FF;
+  border-right: 2px solid #00D4FF;
+  pointer-events: none;
+}
+
+/* Radar scanning sweep animation */
+@keyframes radar-sweep {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-radar-sweep {
+  animation: radar-sweep 4s linear infinite;
+  transform-origin: center center;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0F17;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00D4FF44;
+}
